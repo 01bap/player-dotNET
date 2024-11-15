@@ -7,6 +7,11 @@ namespace PlayerDotNet.logic
         public static PlayerAction Decide(GameState? gameState)
         {
             //TODO: Add your logic here!
+            if(gameState != null)
+                Console.WriteLine(gameState.Bases.ToString());
+            else
+                Console.WriteLine("Nothing recieved");
+
             return new PlayerAction();
         }
     }
