@@ -12,7 +12,7 @@ namespace PlayerDotNet.logic
             else
                 Console.WriteLine("Nothing recieved");
 
-            return new PlayerAction();
+            return new PlayerAction(1,1,1);
         }
     }
 }
