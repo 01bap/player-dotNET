@@ -1,4 +1,5 @@
-﻿using PlayerDotNet.models;
+﻿using System.Diagnostics;
+using PlayerDotNet.models;
 
 namespace PlayerDotNet.logic
 {
@@ -6,6 +7,7 @@ namespace PlayerDotNet.logic
     {
         public static PlayerAction Decide(GameState? gameState)
         {
+            Debug.WriteLine("GOT POST");
             //TODO: Add your logic here!
             if(gameState != null)
                 Console.WriteLine(gameState.Bases.ToString());
